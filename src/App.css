@@ -1,0 +1,397 @@
+.admin-app {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.stack {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.auth-card {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.admin-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminp-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.adminp-header {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-bottom-color: #d1d5db;
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.adminp-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.adminp-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.adminp-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.adminp-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.adminp-header .btn {
+  margin: 0.25rem 0;
+}
+
+.adminp-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  align-items: start;
+  padding: 0 1.5rem;
+}
+
+.adminp-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.adminp-tab {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.adminp-tab.active {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.adminp-panel {
+  width: 100%;
+}
+
+.adminp-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.adminp-content .card,
+.adminp-content .stack,
+.adminp-content .stack > * {
+  width: 100%;
+}
+
+.message-card {
+  padding: 0.75rem;
+  gap: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.media-card {
+  padding: 0.5rem 0.75rem;
+}
+
+.media-card h3 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 1rem;
+  padding-left: 0.8rem;
+}
+
+.media-card .muted {
+  padding-left: 0.8rem;
+}
+
+.message-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.message-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message-bulk-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.message-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.adminp-input {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.45rem 0.75rem;
+  min-width: 240px;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+.message-check {
+  display: flex;
+  align-items: center;
+}
+
+.message-check input {
+  width: 16px;
+  height: 16px;
+}
+
+.message-body {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.message-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.unread-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+
+.adminp-select {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.45rem 0.75rem;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+.message-card .eyebrow {
+  margin: 0;
+}
+
+.message-card p {
+  margin: 0;
+}
+
+.message-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 20;
+}
+
+.message-modal {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+}
+
+.message-modal p {
+  margin: 0;
+}
+
+.message-content {
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.adminp-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.admin-footer {
+  margin-top: auto;
+  background: #ffffff;
+  color: #374151;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-top: 1px solid #d1d5db;
+}
+
+.admin-footer p {
+  margin: 0;
+}
+
+.adminp-section h2 {
+  margin: 0;
+}
+
+.adminp-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.input {
+  font: inherit;
+  padding: 0.6rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+}
+
+.input:focus {
+  outline: 2px solid #2563eb;
+  border-color: transparent;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.btn {
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.btn-danger {
+  background: #dc2626;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 600;
+}
